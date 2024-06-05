@@ -22,16 +22,22 @@ The error was caused due to OVA having an attached iso when exported.
 If an OVA is preferred, the manifest file needs to be updated.
 Since the .ovf file was modified, the SHA1 sum has changed, so we need to update the manifest file (.mf).
 
-```Windows
+### Windows
+
+```bash
 Install FCIV
 FCIV\fciv.exe -sha1 NAME.ovf
 ```
 
-```MacOSx
+### MacOSx
+
+```zsh
 shasum NAME.ovf
 ```
 
-```Linux RHEL
+### Linux (RedHat)
+
+```shell
 sha1sum NAME.ovf
 ```
 
