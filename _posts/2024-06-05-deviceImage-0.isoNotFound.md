@@ -24,7 +24,7 @@ Since the .ovf file was modified, the SHA1 sum has changed, so we need to update
 
 ### Windows
 
-```bash
+```bat
 Install FCIV
 FCIV\fciv.exe -sha1 NAME.ovf
 ```
