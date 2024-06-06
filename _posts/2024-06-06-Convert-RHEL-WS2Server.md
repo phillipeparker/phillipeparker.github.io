@@ -16,7 +16,7 @@ The system must be converted from Workstation to Server.
 Before beginning download the appropriate RedHat Server Release rpm, for this example `redhat-release-server-7.5-8.el7.x86_64.rpm` will be used. Download the corresponding appropriate RedHat Server Release rpm repository.
 
 > This is a delicate process if it is skipped or fails to complete any steps the VM may become inoperable.
-> {: .prompt.warning}
+> {: .prompt-warning}
 
 If the VM is running any external firewalls, like McAfee, remove them.
 RPM, a low-level package manager will be used in this case, because the system is assumed to be offline.
@@ -27,7 +27,7 @@ rpm -ev $(rpm -qa McA* MFE* ISec*) --nodeps
 ```
 
 > Previously it has been necessary to remove glusterfs as well. However this has not been tested for quite some time. If needed, repeat the above steps with glusterfs.
-> {: .prompt.info}
+> {: .prompt-info}
 
 Navigate to the rpm repository location.
 
