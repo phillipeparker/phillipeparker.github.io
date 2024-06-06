@@ -1,17 +1,27 @@
 ---
-title: Converting RHEL Workstation to RHEL Server
+title: Uninstalling McAfee/Trellix Solidcore
 date: 2024-05-23 14:46:00 -0500
 categories: [knowledge-base]
-tags: [kb, redhat]
+tags: [kb, mcafee, trellix, solidcore]
 description:
 ---
 
 ## Problem
 
-RedHat Subscriptions for Workstation have a maxumium of 2 CPU Sockets.
-The system must be converted from Workstation to Server.
+Solidcore can cause all kinds of issues, such as the Domain Controllers not working as Domain Controllers...
 
 ## Solution
+
+NOTE: Make sure Solidcore is removed from the Windows Agent Deployment Client Task, otherwise it will be pushed back out again later.
+
+To remove McAfee Solidcore from a Windows systems perform the following steps.
+
+Login to a terminal and elevate to root.
+Run the following commands:
+sadmin recover
+You will be prompted for the ePO password.
+sadmin disable
+You will be prompted to reboot. 3. Under Programs and Features you should be able to just uninstall McAfee/Trellix Solidifier.
 
 Before beginning download the appropriate RedHat Server Release rpm, for this example `redhat-release-server-7.5-8.el7.x86_64.rpm` will be used. Download the corresponding appropriate RedHat Server Release rpm repository.
 
