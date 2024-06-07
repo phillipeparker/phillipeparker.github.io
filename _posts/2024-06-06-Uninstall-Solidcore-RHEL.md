@@ -1,5 +1,5 @@
 ---
-title: Uninstalling McAfee/Trellix Solidcore for Windows
+title: Uninstalling McAfee/Trellix Solidcore for RHEL
 date: 2024-05-23 14:46:00 -0500
 categories: [knowledge-base]
 tags: [mcafee, trellix, solidcore, redhat]
